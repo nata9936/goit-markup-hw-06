@@ -64,8 +64,8 @@
       <!--Services-->
       <section class="section hero">
         <h1 class="main-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="frame-button">
-          <a class="button" href="">Заказать услугу</a>
+        <button class="frame-button" data-open-modal>
+          Заказать услугу
         </button>
       </section>
       <!--Our advantages-->
@@ -104,6 +104,87 @@
           </ul>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <form class="js-speaker-form form">
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-field">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder=" "
+              />
+              <label for="name" class="form-label">Имя</label>
+              <svg class="form-icon">
+                <use href="./img/symbol.defs.svg#icon-person-black"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="form-input"
+                placeholder=" "
+              />
+              <label for="tel" class="form-label">Телефон</label>
+              <svg class="form-icon">
+                <use href="./img/symbol.defs.svg#icon-telephon"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder=" "
+              />
+              <label for="email" class="form-label">
+                Почта
+              </label>
+              <svg class="form-icon">
+                <use href="./img/symbol.defs.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="textarea"
+                name="comment"
+                id="comment"
+                placeholder=" "
+              ></textarea>
+              <label class="form-comment" for="comment">Комментарий</label>
+            </div>
+
+            <label class="form-consent" for="consent">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="consent"
+                id="consent"
+              />
+              <span class="icon-consent"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form-link" href="">Условия договора</a>
+            </label>
+
+            <button
+              type="submit"
+              class="frame-button button-form"
+              data-close-modal
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
       <!--What are you doing-->
       <section class="section">
         <div class="container">
@@ -387,8 +468,29 @@
             </li>
           </ul>
         </div>
+      
+      <form>
+        <p class="footer title-white">Подпишитесь на рассылку</p>
+       <div class="footer-mail">
+        
+         <input type="email" name="email" id="email" class="footer-telegram" placeholder=" "/>
+         <label for="email" class="label-mail"  >E-mail</label>
+         <button class="button-footer frame-button"> Подписаться
+           <svg class="footer-icon">
+             <use href="./img/symbol.defs.svg#icon-icon-send" ></use>
+           </svg>
+         </button>
+       </div>
 
-        <div class="mail">
+      
+      </form>
+
+        
+
+
+        
+
+        <!-- <div class="mail">
           <p class="title-white">Подпишитесь на рассылку</p>
           <ul class="list list-mail">
             <li>
@@ -396,9 +498,7 @@
             </li>
             <li>
               <button class="frame-button">
-                <a class="button" href=""
-                  >Подписаться<img class="icon-img" src="./img/iconsend.svg"
-                /></a>
+                Подписаться<img class="icon-img" src="./img/iconsend.svg" />
               </button>
             </li>
           </ul>
@@ -408,7 +508,125 @@
         <div class="line">
           <p class="developed">2020 | Developed by GoIT Students</p>
         </div>
-      </div>
+      </div> -->
     </footer>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <form class="js-speaker-form form">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-input"
+              placeholder=" "
+            />
+            <label for="name" class="form-label">Имя</label>
+            <svg class="form-icon">
+              <use href="./img/symbol.defs.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="form-input"
+              placeholder=" "
+            />
+            <label for="tel" class="form-label">Телефон</label>
+            <svg class="form-icon">
+              <use href="./img/symbol.defs.svg#icon-telephon"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              placeholder=" "
+            />
+            <label for="email" class="form-label">
+              Почта
+            </label>
+            <svg class="form-icon">
+              <use href="./img/symbol.defs.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              placeholder=" "
+            ></textarea>
+            <label class="form-comment" for="comment">Комментарий</label>
+          </div>
+
+          <label class="form-consent" for="consent">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="consent"
+              id="consent"
+            />
+            <span class="icon-consent"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="form-link" href="">Условия договора</a>
+          </label>
+
+          <button
+            type="submit"
+            class="frame-button button-form"
+            data-close-modal
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
